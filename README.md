@@ -8,7 +8,7 @@ own testbenches. The code here can therefore be used as an example of testbench 
 ## Repository Structure
 - Testbench Setups: miscellaneous files used to create a testbench environment
 - Testbench Scripts: SystemVerilog testbench files
-- Project Scripts: SV files taken from the Digital Design team's MPF project (current as of 10/09/2026 @ 11AM CDT); used as DUT
+- Project Scripts: SV files from the Digital Design team's MPF project (V2, current as of 10/09/2026 @ 11AM CDT); used as DUT
 - Other Information: information about using Cadence Xcelium (software used to test testbenches)
 
 ## Important Notes
