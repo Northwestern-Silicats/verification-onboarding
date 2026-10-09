@@ -1,7 +1,7 @@
 from PIL import Image
 
-# Load the image and convert to RGB
-img = Image.open('Mount-Fuji-with-cherry-blossom-at-Lake-kawaguchiko.jpg').convert('RGB') # Make sure to change this!
+# Load the image (assuming in same directory as this script) and convert to RGB
+img = Image.open('Mount-Fuji-with-cherry-blossom-at-Lake-kawaguchiko.jpg').convert('RGB') # Make sure to change this to your image!
 width, height = img.size
 
 with open('image_pixels.hex', 'w') as f:
