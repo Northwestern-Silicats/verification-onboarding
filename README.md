@@ -19,3 +19,7 @@ edge and a synchronous, active high reset.
 Additionally, information about using Cadence Xcelium is only meant as a reference. The instructions are written with respect to the ECE/CS Student
 Computing Lab in Tech EG20 & its related servers. The lab is primarily meant for coursework & may not be accessible; however, exposure to the Linux
 command-line instructions themselves can be helpful.
+
+## Authors
+- Digital Design Team Members: Spencer Kogoma & Jacob (Project Scripts & Digital Design Team subfolders)
+- Design Verification Team Members: Jeremiah Woods (Other Information and other written files)
