@@ -2,11 +2,12 @@
 import pixel_pkg::*;
 
 module median_pixel_filter_test;
+	// inputs
 	logic clk, rst, start_i, pixel_valid_i;
 	pixel_t pixel_i;
-	
-logic done_o, pixel_valid_o;
-pixel_t pixel_o;
+	// outputs
+	logic done_o, pixel_valid_o;
+	pixel_t pixel_o;
 
 median_filter dut(.clk(clk), .rst(rst), .start_i(start_i), .pixel_valid_i(pixel_valid_i), .pixel_i(pixel_i), .done_o(done_o), .pixel_valid_o(pixel_valid_o), .pixel_o(pixel_o)); 
 
@@ -28,20 +29,20 @@ median_filter dut(.clk(clk), .rst(rst), .start_i(start_i), .pixel_valid_i(pixel_
 
 		@(posedge clk); // an alternative timing method that automatically waits for rising clk edge
 		rst = 1; 
-@(posedge clk);
-rst = 0; // ends test of reset functionality after 1 clock cycle
-		
-start_i = 1;
-@(posedge clk);
-start_i = 0; // turns off start_i since dut moves to compute state
-for (i = 0; i < total_pixels; i++) begin
-	pixel_i <= pixel_t'(image_mem[i]); // uses a static cast ['(...)] to convert 24bit hex string into RGB inputs
-	pixel_valid_i <= 1;
-	@(posedge clk); // inserting this at the end allows for data to be sampled right after previous rising edge, avoiding 1-cycle gap
-end
+		@(posedge clk);
+		rst = 0; // ends test of reset functionality after 1 clock cycle
+				
+		start_i = 1;
+		@(posedge clk);
+		start_i = 0; // turns off start_i since dut moves to compute state
+		for (i = 0; i < total_pixels; i++) begin
+			pixel_i <= pixel_t'(image_mem[i]); // uses a static cast ['(...)] to convert 24bit hex string into RGB inputs
+			pixel_valid_i <= 1;
+			@(posedge clk); // inserting this at the end allows for data to be sampled right after previous rising edge, avoiding 1-cycle gap
+		end
 
-pixel_valid_i <= 0;
-pixel_i <= '0; // not strictly necessary, but keeps testing clear
+		pixel_valid_i <= 0;
+		pixel_i <= '0; // not strictly necessary, but keeps testing clear
 
 		if (!done_o) begin
 			@(posedge done_o); //intentional hang to wait until dut is done
@@ -51,7 +52,7 @@ pixel_i <= '0; // not strictly necessary, but keeps testing clear
 	end
 
 	// separate initial block to (potentially) save hex results as they run
-	// if you’ve taken CS211, this may look familiar to C
+	// if you’ve taken CS211, this may look similar to C
 	integer out_file;
 	initial begin
 		out_file = $fopen("image_output.hex", "w");
