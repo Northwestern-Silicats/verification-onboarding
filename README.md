@@ -1,2 +1,2 @@
 # verification-onboarding
-Onboarding scripts for Fall 2026.
+Onboarding scripts and information for Fall 2026.
