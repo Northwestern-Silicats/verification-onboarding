@@ -10,7 +10,8 @@ with them, we've chosen to focus on Xcelium here to create a shared knowledge ba
 
 ## How can I use Xcelium?
 Being an enterprise Linux application frequently accessed via server license, Xcelium typically does not have a simple icon that can be clicked to launch it. Instead, you must detail the file paths of both the Design Under Test (DUT; the actual RTL design code) and a corresponding testbench,
-as well as include any command-line arguments needed to execute the program. As an example, look at the following command:
-- Insert example Xcelium startup here (no parasitics)
+as well as include any command-line arguments needed to execute the program. As an example, look at the following command to test a bagel (torus) volume calculator:
+- $ xrun -64bit -gui -access r bagel_volume.sv bagel_volume_test.sv
 
-The above command [describe here].
+The above command runs Xcelium (xrun) in 64-bit mode (-64bit) and a graphical user interface (-gui). It also gives Xcelium read access (-access r) to the Design Under Test (bagel_volume.sv) and its testbench following it (bagel_volume_test.sv).
+If this is a bit much at once, don't worry--we'll go into more detail later. For now, understand that adjusting these arguments is necessary to properly test designs, and you'll want to be comfortable checking how you start Xcelium before making any conclusions about your design's validity.
