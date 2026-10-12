@@ -1,4 +1,6 @@
 # About Cadence Xcelium
+![Cadence](https://www.hpcwire.com/wp-content/uploads/2011/03/cadence-logo.jpg)
+
 Xcelium is a EDA simulation tool used to test digital designs (those developed using RTL such as Verilog or VHDL).
 It can be used both with and without considering for parasitic capacitance, allowing design functionally (RTL logic) and implementation validity (logic + chip performance) to be examined separately.
 Usage of Xcelium typically requires a license and is only available on Linux systems; however, some courses (such as Comp_Eng 303) provide some exposure via the Student Computing Lab.
