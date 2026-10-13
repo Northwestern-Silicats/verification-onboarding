@@ -16,9 +16,10 @@ The SV files here, in particular the testbenches, should not be assumed as "plug
 input/output names, parameters, and reset functionality may require edits. The testbenches here assume a clock triggered on a positive 
 edge and a synchronous, active high reset.
 
-Additionally, information about using Cadence Xcelium is only meant as a reference. The instructions are written with respect to the ECE/CS Student
-Computing Lab in Tech EG20 & its related servers. The lab is primarily meant for coursework & may not be accessible; however, exposure to the Linux
-command-line instructions themselves can be helpful.
+Additionally, while the majority of information about Cadence Xcelium is broadly applicable, certain instructions are written with respect to the ECE/CS Student
+Computing Lab in Tech EG20 & related servers. CE, EE, and CS students should have access, but you may have to request it. Additionally, a remote-access option
+is detailed here: http://it.eecs.northwestern.edu/info/2015/11/03/info-labs.html. The connection tends to be stable (if slightly slow), but requires using a VPN
+if off-campus.
 
 ## Authors
 - Digital Design Team Members: Spencer Kogoma & Jacob (Project Scripts & Digital Design Team subfolders)
