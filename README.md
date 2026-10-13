@@ -1,4 +1,6 @@
 # Silicats - Fall 2026 Verification Onboarding
+<img width="1935" height="612" alt="Screenshot from 2026-10-13 07-56-38" src="https://github.com/user-attachments/assets/188d9679-77e5-4546-ba8a-f45065d71016" />
+
 Onboarding scripts and information for Fall 2026.
 
 These files are intended to be used in conjunction with the Digital Design team's Median Pixel Filter onboarding project.
@@ -23,4 +25,4 @@ if off-campus.
 
 ## Authors
 - Digital Design Team Members: Spencer Kogoma & Jacob (Project Scripts & Digital Design Team subfolders)
-- Design Verification Team Members: Jeremiah Woods (Other Information and other written files)
+- Design Verification Team (Cadence Xcelium information)
