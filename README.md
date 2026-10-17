@@ -25,4 +25,4 @@ if off-campus.
 
 ## Authors
 - Digital Design Team Members: Spencer Kogoma & Jacob (Project Scripts & Digital Design Team subfolders)
-- Design Verification Team (Cadence Xcelium information)
+- Design Verification Team (Cadence Xcelium information & Onboarding Slides)
